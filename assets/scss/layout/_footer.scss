@@ -1,0 +1,125 @@
+
+
+
+.footer{
+  // position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 80vh;
+  z-index: -1;
+    letter-spacing: 3.2px;
+    font-size: 13px;
+      line-height: 1.2;
+      color: var(--color-02);
+      line-height: 2;
+      font-family: $font-02;
+
+
+      .top{
+        left: 0;
+        width: 100%;
+        background: #000;
+        padding: 80px 0 60px;
+        .inner{
+          display: flex;
+          justify-content: space-between;
+        }
+        .left{
+          flex: 0 0 auto;
+          width: 37.5%;
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+          }
+        }
+        .right{
+          flex: 0 0 auto;
+          width: 45.83333333%;
+          margin-left: 12.5%;
+
+          .mail-area{
+            display: flex;
+            flex-direction: column;
+            color: var(--color-02);
+            form{
+              position: relative;
+              background: #000;
+            }
+            fieldset{
+              outline: none;
+              border: none;
+
+              .btn-submit{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60px;
+                height: 100%;
+                overflow: hidden;
+                background-image: url(../images/icon-submit.svg);
+                background-repeat: no-repeat;
+                background-position: center right;
+              }
+            }
+
+            input{
+              outline: #fff;
+              border-radius: 2px;
+              background: #000;
+              color: #fff;
+              width: 100%;
+              border: 0;
+              border-bottom: 1px solid var(--color-02);
+              border-radius: 0;
+              padding: 10.4px 0;
+
+              &::placeholder {
+                color: #fff;
+                font-size: 13px;
+              }
+
+            }
+          }
+
+          .link-list{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px 3.85vw;
+              margin-top: 60px;
+
+              .link-item{
+                .link-wrap{
+                  display: flex;
+                  flex-direction: column;
+                  .link{
+                    color:var(--color-01);
+                  }
+                }
+              }
+          }
+
+
+
+        }
+      }
+
+      .bottom{
+        width: 100%;
+        border-top: 1px solid var(--color-02);
+        padding-block: 20px;
+        z-index: -1;
+        .copy{
+          color: var(--color-01);
+          letter-spacing: 3.2px;
+          font-size: 13px;
+          line-height: 2;
+        }
+      }
+
+  }
+  
+

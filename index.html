@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMEO COLLECTION</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="ico" href="./assets/images/favicon.ico" sizes="192x192">
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="group-nav">
+        <div class="left">
+          <div class="des-area">
+            <a href="">DESTINATION</a>
+          </div>
+        </div>
+        <h1 class="logo"><a href=""><img src="./assets/images/logo-romeo.svg" alt="romeo로고"></a></h1>
+        <div class="right">
+          <div class="menu-area">
+            <a href="">MENU</a>
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="book-area">
+            <a href="" class="btn-book">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="dimmed"></div>
+      <section class="sc-dest">
+        <div class="dest-list">
+          <div class="dest-item">
+            <a href="">
+              <div class="img-box">
+                <img src="./assets/images/dest01.webp" alt="">
+              </div>
+              <div class="desc-box">
+                <div class="name">ROMEO NAPOLI</div>
+                <div class="state">COMMING SOON</div>
+              </div>
+            </a>
+          </div>
+          <div class="dest-item">
+            <a href="">
+              <div class="img-box">
+                <img src="./assets/images/dest02.webp" alt="">
+              </div>
+              <div class="desc-box">
+                <div class="name">ROMEO NAPOLI</div>
+                <div class="state">COMMING SOON</div>
+              </div>
+            </a>
+          </div>
+          <div class="dest-item">
+            <a href="">
+              <div class="img-box">
+                <img src="./assets/images/dest03.webp" alt="">
+              </div>
+              <div class="desc-box">
+                <div class="name">ROMEO NAPOLI</div>
+                <div class="state">COMMING SOON</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="sc-menu">
+        <div class="menu-area">
+          <div class="link-menu">
+            <a href="" class="wrap"><span class="text">OUR PHILOSOPHY</span></a>
+          </div>
+          <div class="link-menu">
+            <a href="" class="wrap"><span class="text">CONTACT US</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="sc-book">
+        <div class="book-area">
+          <div class="title-wrap">
+            <h2 class="title">BOOK NOW</h2>
+            <button class="btn-close"></button>
+          </div>
+          <div class="link-book">
+            <div class="tab-area">
+              <ul class="tab-nav">
+                <li><a href="#tab01" class="active">ACCOMMODATION</a></li>
+                <li><a href="#tab02" class="">RESTAURANT</a></li>
+              </ul>
+              <ul class="tab-list">
+                <li id="tab01" class="tab1" style="display: none;">
+                  <div class="info-area">
+                    <div class="title">BOOK ROMEO DIRECT</div>
+                    <span class="desc">Dedicated Welcome Amenities, Free Room upgrade Upon availability, SPA Aqva Journey Included</span>
+                  </div>
+                  <div class="select-area">
+                    <form action="" class="">
+                      <fieldset>
+                        <legend class="blind">통합검색</legend>
+                        <select name="hotel" required="">
+                          <option value="" selected="" disabled="">SELECT DESTINATION</option>
+                          <option value="78627" selected="selected">ROMEO NAPOLI</option>
+                        </select>
+                        <button class="btn-more">
+                          <span class="blind">검색</span>
+                        </button>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="check-area">
+                    <button class="btn-check">
+                      CHECK AVAILABILITY
+                    </button>
+                  </div>
+                </li>
+                <li id="tab02" class="tab2" style="display: none;">
+                  <div class="info-area">
+                    <div class="title">SELECT A RESTAURANT</div>
+                  </div>
+                  <div class="select-area">
+                    <form action="" class="">
+                      <fieldset>
+                        <legend class="blind">통합검색</legend>
+                        <select placeholder="ROMEO NAPOLI">
+                          <option value="" selected="" disabled="">SELECT DESTINATION</option>
+                          <option value="78627" selected="selected">ROMEO NAPOLI</option>
+                        </select>
+                        <select class="bottom" placeholder="SELECT RESTAURANT">
+                          <option>SELECT DESTINATION</option>
+                          <option>ROMEO NAPOLI</option>
+                        </select>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="check-area">
+                    <button class="btn-check">
+                      RESERVE A TABLE
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-zoom">
+        <div class="video-box">
+          <video class="main-video" preload="auto" loop muted playsinline autoplay
+            src="./assets/images/romeo_collection_05-2023_v6_576.mp4"></video>
+        </div>
+        <div class="marquee-track">
+          <div class="marquee-flex">
+            <div class="text-box">
+              <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+              <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+            </div>
+            <div class="text-box">
+              <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+              <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+            </div>
+          </div>
+        </div>
+        <button class="btn-down">
+          <span class="blind">스크롤다운</span>
+        </button>
+      </section>
+      <section class="sc-our">
+        <h2 class="headline">OUR DESTINATIONS</h2>
+        <div class="our-area">
+          <ul class="our-list">
+            <li class="our-item">
+              <a href="">
+                <!-- :before -->
+                <div class="img-box">
+                  <img src="./assets/images/our1.webp">
+                </div>
+                <strong class="area">NAPOLI</strong>
+                <div class="marquee-track">
+                  <div class="marquee-flex">
+                    <div class="text-box">
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                    </div>
+                    <div class="text-box">
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-item">
+              <a href="">
+                <div class="img-box">
+                  <img src="./assets/images/our2.webp">
+                </div>
+                <strong class="area">ROMA</strong>
+                <div class="marquee-track">
+                  <div class="marquee-flex">
+                    <div class="text-box">
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                    </div>
+                    <div class="text-box">
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="our-item">
+              <a href="">
+                <div class="img-box">
+                  <img src="./assets/images/our3.webp">
+                </div>
+                <strong class="area">MASSA LUBRENSE</strong>
+                <div class="marquee-track">
+                  <div class="marquee-flex">
+                    <div class="text-box">
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                    </div>
+                    <div class="text-box">
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                      <p>Home to Uniqueness <strong>Home to Uniqueness</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sc-romeo">
+        <div class="inner">
+          <div class="cont-item01">
+            <div class="row01">
+              <div class="col01">
+                <h3 class="title">UNIQUENESS THAT INSPIRES <br> ENERGY AND STIRS PASSION; <br> ROMEO’S AVANT-GARDIST
+                  SPIRIT <br> INTERTWINED WITH ITALIAN <br> HERITAGE CREATES UNEXPECTED <br> EQUILIBRIUM.</h3>
+                <div class="desc-wrap">
+                  <p class="desc">The ROMEO Collection is a curated ecosystem of culture, comfort, gastronomy<br> and art,
+                    welcoming guests to uniquely beautiful urban and natural retreats.<br> ROMEO is the soul of the
+                    destination, embraces the joy of the unexpected, and is<br> exceptional.</p>
+                  <button class="btn-more"><span>SHOW ME MORE</span></button>
+                </div>
+              </div>
+              <div class="col02">
+                <img src="./assets/images/romeo1.webp">
+              </div>
+            </div>
+            <div class="row02">
+              <div class="scroll-list01">
+                <div class="scroll-item">
+                  <div class="text-box">
+                    <p>Avant-Garde <strong>Excitment</strong> Unexpected <strong>Amazement.</strong></p>
+                    <p>Avant-Garde <strong>Excitment</strong> Unexpected <strong>Amazement.</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div class="scroll-list02">
+                <div class="scroll-item">
+                  <div class="text-box">
+                    <p><strong>Comfort</strong> Indulgence <strong>Hedonism</strong> Uniqueness.</p>
+                    <p><strong>Comfort</strong> Indulgence <strong>Hedonism</strong> Uniqueness.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row03">
+              <div class="col01">
+                <div class="img-box"><img src="./assets/images/row03-1.webp" alt=""></div>
+              </div>
+              <div class="col02">
+                <div class="img-box"><img src="./assets/images/row03-2.webp" alt=""></div>
+              </div>
+              <div class="col03">
+                <p class="desc">
+                  “ROMEO is curator of culture and<br> master of connection; creator of an<br> enviable network in beautiful
+                  places,<br> the door is open for those who share<br> a passion for the unique, for beauty,<br> for escape and for
+                  exploration - and<br> the hotels – they are the key.”
+                </p>
+              </div>
+              <div class="col04">
+                <div class="img-box"><img src="./assets/images/row03-4.webp" alt=""></div>
+              </div>
+              <div class="col05">
+                <div class="img-box"><img src="./assets/images/row03-5.webp" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="top">
+          <div class="inner">
+            <div class="left">
+              <img src="./assets/images/logo-romeo-footer.svg" alt="">
+            </div>
+            <div class="right">
+              <div class="mail-area">
+                <p class="title">ROMEO NEWSLETTER</p>
+                <form action="" class="">
+                  <fieldset>
+                    <legend class="blind">통합검색</legend>
+                    <input type="search" class="search-bar" type="email" placeholder="YOUR EMAIL">
+                    <button class="btn-submit">
+                      <span class="blind">검색</span>
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+              <ul class="link-list">
+                <li class="link-item">
+                  <p class="title">DESTINATIONS</p>
+                  <div class="link-wrap">
+                    <a href="" class="link">ROMEO NAPOLI</a>
+                    <a href="" class="link">ROMEO ROMA</a>
+                    <a href="" class="link">ROMEO MASSA LUBRENSE</a>
+                  </div>
+                </li>
+                <li class="link-item">
+                  <p class="title">CONTACT</p>
+                  <div class="link-wrap">
+                    <a href="" class="link mail">welcome@romeohotel.it</a>
+                  </div>
+                </li>
+                <li class="link-item">
+                  <p class="title">LINKS</p>
+                  <div class="link-wrap">
+                    <a href="" class="link">NEWSLETTER</a>
+                    <a href="" class="link">WORK WITH US</a>
+                    <a href="" class="link">PRESS</a>
+                    <a href="" class="link">HOTEL POLICY</a>
+                    <a href="" class="link">PRIVACY POLICY</a>
+                    <a href="" class="link">COOKIE POLICY</a>
+                    <a href="" class="link">CERTIFICATIONS</a>
+                  </div>
+                </li>
+                <li class="link-item">
+                  <p class="title">FOLLOW US</p>
+                  <div class="link-wrap">
+                    <a href="" class="link">INSTAGRAM</a>
+                    <a href="" class="link">FACEBOOK</a>
+                    <a href="" class="link">LINKEDIN</a>
+                    <a href="" class="link">YOUTUBE</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div class="bottom">
+        <div class="inner">
+          <div class="copy">©ALL RIGHTS RESERVED. ROMEO ALBERGHI S.R.L. - P.IVA 07822410630</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
