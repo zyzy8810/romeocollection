@@ -43,3 +43,19 @@
   .no-scroll{
     overflow: hidden;
   }
+
+  .skip-nav {
+    position: relative;
+  
+    a {
+      position: absolute;
+      line-height: 50px;
+      background: #f00;
+      color: #fff;
+      top: -50px;
+  
+      &:focus, &:active {
+        top: 0;
+      }
+    }
+  }
