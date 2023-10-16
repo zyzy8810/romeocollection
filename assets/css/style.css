@@ -883,6 +883,7 @@ h2.headline {
   white-space: nowrap;
   z-index: 3;
   transition: 0.3s;
+  text-align: center;
 }
 .sc-our .our-area .our-list .our-item .marquee-track {
   display: flex;
